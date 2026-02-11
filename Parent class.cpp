@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Teacher{
@@ -8,19 +9,28 @@ private:
     string subject;
     string room;
 public:
-    string getname(string name = "Pasindu"){
+    Teacher(string n, string s, string r){
+        name = n;
+        subject = s;
+        room = r;
+        
+    }
+    string getname(){
         return name;
     }
-    string getsubject(string subject){
+    string getsubject(){
         return subject;
     }
-    string getroom(string room){
+    string getroom(){
         return room;
     }
 };
 
 int main(){
-    Teacher obj;
-    cout << obj.getname() << endl;
+    Teacher obj1("Pasindu", "Maths","IT");
+    Teacher obj2("Janith", "Science", "MA3");
+    cout << obj1.getname() << endl;
+    cout << obj2.getsubject() << endl;
+    
     
 }
