@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Midnight Revision Hub</title>
+</head>
+<body>
+    <div class="card">
+        
+        {% if view == "menu" %}
+            <h1>Revision Hub</h1>
+            
+            <p class="label">Teacher Decks</p>
+            {% for s in core %}
+                <a href="/quiz?subject={{s}}&idx=0" class="btn">{{ s | replace('_', ' ') | capitalize }}</a>
+            {% else %}
+                <p style="font-size:0.8em; color:#475569;">No teacher decks found in /data/core</p>
+            {% endfor %}
+
+            <p class="label" style="margin-top:25px;">My Custom Decks</p>
+            {% for s in user %}
+                <div style="display:flex; gap:10px;">
+                    <a href="/quiz?subject={{s}}&idx=0" class="btn" style="flex-grow:1">{{ s | replace('_', ' ') | capitalize }}</a>
+                    <a href="/?del={{s}}" class="btn-del">✕</a>
+                </div>
+            {% else %}
+                <p style="font-size:0.8em; color:#475569;">No custom decks yet.</p>
+            {% endfor %}
+
+            <a href="/?view=create" class="btn" style="background:#10b981; margin-top:30px;">+ Create New Round</a>
+
+        {% elif view == "create" %}
+            <h2>New Study Round</h2>
+            <form action="/" method="POST">
+                <input type="text" name="title" placeholder="Round Title (e.g. Chemistry Basics)" class="input-field" required>
+                <div id="q-list">
+                    <div class="q-group">
+                        <input type="text" name="q" placeholder="Question" class="input-field" required>
+                        <input type="text" name="a" placeholder="Answer (e.g. H2O)" class="input-field" required>
+                    </div>
+                </div>
+                <button type="button" class="btn" style="background:#475569; font-size: 0.9em;" onclick="addQ()">+ Add Another Card</button>
+                <button type="submit" class="btn" style="background:#10b981">Save Round</button>
+            </form>
+            <script>
+                function addQ() {
+                    const div = document.createElement('div');
+                    div.className = 'q-group';
+                    div.innerHTML = '<input type="text" name="q" placeholder="Question" class="input-field" required><input type="text" name="a" placeholder="Answer" class="input-field" required>';
+                    document.getElementById('q-list').appendChild(div);
+                }
+            </script>
+            <a href="/" style="display:block; margin-top:15px; color:#94a3b8; text-decoration:none; font-size:0.9em;">Cancel</a>
+
+        {% elif view == "quiz" %}
+            <p style="color: #6366f1; font-weight: bold; font-size: 0.8em;">{{ q.ao }}</p>
+            <h2 style="margin: 30px 0;">{{ q.question | safe }}</h2>
+            <button class="btn" onclick="document.getElementById('reveal').style.display='block'">Show Answer</button>
+            
+            <div id="reveal" class="answer-box">
+                <p style="color: #10b981; font-size: 1.6em;"><strong>{{ q.answer | safe }}</strong></p>
+                <p style="color: #94a3b8; font-size: 0.8em; margin-top: 20px;">Rate your confidence:</p>
+                <form action="/quiz?subject={{ subject }}&idx={{ idx }}" method="POST" class="score-container">
+                    <button name="score" value="1" class="btn-score" style="background:#ef4444">1</button>
+                    <button name="score" value="2" class="btn-score" style="background:#f97316">2</button>
+                    <button name="score" value="3" class="btn-score" style="background:#eab308">3</button>
+                    <button name="score" value="4" class="btn-score" style="background:#22c55e">4</button>
+                    <button name="score" value="5" class="btn-score" style="background:#10b981">5</button>
+                </form>
+            </div>
+
+        {% elif view == "done" %}
+            <h1 style="color: #10b981;">Progress Saved</h1>
+            <div style="margin: 30px 0; background: #1a1c23; padding: 20px; border-radius: 10px;">
+                <p>New Interval: <b style="color:#6366f1;">{{ days }} days</b></p>
+                <p style="color: #94a3b8; font-size:0.9em;">Next Review: {{ date }}</p>
+            </div>
+            <a href="/quiz?subject={{ subject }}&idx={{ idx | int + 1 }}" class="btn">Next Question</a>
+            <a href="/" class="btn" style="background:#475569">Main Menu</a>
+        {% endif %}
+
+    </div>
+</body>
+</html>

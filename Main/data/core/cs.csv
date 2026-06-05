@@ -1,0 +1,98 @@
+What is the purpose of the ALU?,To perform arithmetic and logical operations,1.3,1
+What is 1011 in denary?,11,2.5,2
+Explain one benefit of using a library.,Code is already tested and saves development time,2.5,1
+Define 'Abstraction'.,Removing unnecessary details to focus on important parts,2.6,3
+What is the result of 14 MOD 3?,2,2.5,1
+Why is a secondary storage device needed?,For permanent storage of data when power is lost,2.3,2
+What is a 'Protocol'?,A set of rules for data transmission,2.6,3
+State the purpose of the Program Counter (PC).,Holds the address of the next instruction to be fetched,2.5,2
+Discuss the impact of the Digital Divide.,Inequality in access to info leads to social and economic gaps,2.5,2
+Convert the hex value 'A' to denary.,10,2.5,2
+What is an Interrupt?,A signal sent to the CPU to request immediate attention,2.5,1
+What is the time complexity of a Linear Search?,O(n),2.3,5
+What is a 'Packet'?,A small unit of data sent over a network,2.3,5
+Explain the use of a Firewall.,To monitor and filter incoming and outgoing network traffic,2.5,1
+What is 'Casting' in programming?,Converting a variable from one data type to another,2.5,1
+What is the bit depth of a standard CD?,16 bits,2.5,2
+What is the function of the BIOS?,To perform hardware initialization and boot the OS,2.0999999999999996,4
+State one advantage of a Star network topology.,If one cable fails the rest of the network stays up,2.45,5
+What is the decimal value of the binary 1100?,12,2.5,2
+Define 'Metadata'.,Data that describes other data,2.4,7
+What is the purpose of a GPU?,To handle intensive graphics processing and parallel tasks,2.5,1
+Explain the term 'Paging'.,Dividing physical memory into fixed-size blocks,2.5,1
+How many bytes are in a Kilobyte (KB)?,1024 bytes,2.5,1
+What does HTTP stand for?,Hypertext Transfer Protocol,2.3,2
+What is a 'Primary Key'?,A unique identifier for a record in a database,2.5,1
+Describe a 'Man-in-the-middle' attack.,Intercepting communications between two parties secretly,2.5,1
+What is the result of 17 DIV 5?,3,2.5,1
+Define 'Encapsulation' in OOP.,Bundling data and methods that work on that data,2.5,1
+What is an 'Iterative' process?,A process that repeats a set of instructions,2.5,1
+State the time complexity of a Bubble Sort.,O(n^2),2.5,1
+What is the purpose of the Memory Data Register (MDR)?,Holds the actual data being fetched or written to memory,2.5,1
+What is 'Lossy' compression?,Compression where some data is permanently removed,2.3,2
+Name the layer of the TCP/IP model that handles routing.,Internet Layer,2.5,1
+What is an 'Attribute' in a database?,A characteristic or field of an entity,2.5,1
+What is the purpose of an SSID?,To identify a specific wireless network,2.5,1
+Explain the use of 'Parameters' in subroutines.,Variables passed into a function to be processed,2.3,2
+What is 'Binary'?,A base-2 number system using 0 and 1,2.5,1
+What is a 'Variable'?,A named memory location that can change value,2.5,1
+Define 'Logic Gate'.,A building block of a digital circuit (AND/OR/NOT),2.6,3
+What is the difference between RAM and ROM?,RAM is volatile; ROM is non-volatile,2.5,1
+What is 'Virtual Memory'?,Using secondary storage as an extension of RAM,2.5,1
+What is a 'Hub' in networking?,A device that broadcasts data to all ports,2.5,1
+Define 'Malware'.,Software designed to cause harm or gain unauthorized access,2.3,2
+What is 'Phishing'?,An attempt to trick users into giving personal info via email,2.5,2
+What is the purpose of an OS?,To manage hardware and provide a user interface,2.5,1
+What is 'Machine Code'?,Instructions written in binary that the CPU understands,2.6,3
+Define 'Syntax' in programming.,The set of rules that define the structure of a language,2.3,2
+What is 'Dry Running' a program?,Tracing the execution of code on paper,2.5,2
+What is a 'Constant'?,A value that does not change during program execution,2.5,1
+Define 'Recursion'.,A function calling itself until a base case is met,2.5,1
+What is a '2D Array'?,An array of arrays (like a grid),2.6,3
+What is 'ASCII'?,A 7-bit character set for encoding text,2.5,1
+What is 'Unicode'?,A character set that supports almost all world languages,2.5,2
+What is 'Color Depth'?,The number of bits used to represent a single pixel,2.5,1
+Define 'Sample Rate'.,The number of audio samples taken per second,2.6,3
+What is a 'Database Management System' (DBMS)?,Software used to create and manage databases,2.5,1
+What is 'SQL'?,Structured Query Language for database management,2.7,22
+What is a 'Foreign Key'?,A primary key from one table used in another to link them,2.5,1
+What is 'Normalization'?,The process of organizing data to reduce redundancy,2.5,1
+What is a 'DNS'?,Domain Name System - translates URLs to IP addresses,2.5,2
+What is a 'MAC Address'?,A unique hardware identifier for a network interface,2.5,1
+What is 'Decomposition'?,Breaking a large problem into smaller sub-problems,2.5,2
+What is a 'Logical Error'?,A bug that produces the wrong output but code still runs,2.5,2
+What is 'Validation'?,Checking that input data is sensible and reasonable,2.6,3
+What is 'Verification'?,Checking that data has been entered correctly,2.5,5
+What is an 'IDE'?,Integrated Development Environment for writing code,2.5,1
+What is 'Version Control'?,Managing changes to source code over time,2.5,2
+What is 'Open Source' software?,Software where the source code is freely available,2.35,2
+What is 'Proprietary' software?,Software owned by a company where code is hidden,2.3,2
+What is the 'Data Protection Act'?,Law that controls how personal data is used by orgs,2.6,3
+What is 'The Computer Misuse Act'?,Law that makes hacking and unauthorized access illegal,2.5,1
+What is 'The Copyright Designs and Patents Act'?,Law that protects intellectual property from theft,2.5,2
+What is an 'Embedded System'?,A computer system built into another device (e.g. microwave),2.5,1
+What is the 'Clock Speed' of a CPU?,The number of fetch-execute cycles per second (Hz),2.5,1
+What is 'Cache' memory?,High-speed memory near the CPU for frequent data,2.5,1
+What is a 'Dual Core' processor?,A CPU with two independent processing units,2.5,1
+What is 'Magnetic Storage'?,Storage using magnetized disks (e.g. HDD),2.3,2
+What is 'Optical Storage'?,Storage using lasers to read/write pits and lands (e.g. CD),2.5,1
+What is 'Solid State Storage'?,Storage using electronic flash memory (e.g. SSD),2.5,2
+Define 'LAN'.,Local Area Network - covers a small geographical area,2.3,2
+Define 'WAN'.,Wide Area Network - covers a large geographical area,2.5,2
+What is 'Bandwidth'?,The amount of data that can be sent in a given time,2.5,1
+What is 'Latency'?,The delay before a transfer of data begins,2.5,1
+What is a 'WAP'?,Wireless Access Point,2.5,1
+What is 'Encryption'?,Encoding data so only authorized parties can read it,2.6,5
+What is an 'IP Address'?,A unique address for a device on a network,2.6,3
+What is 'The Cloud'?,Storing and accessing data over the internet,2.5,1
+What is 'Object-Oriented Programming'?,Programming based on 'objects' (data and code),2.5,1
+What is 'Procedural' programming?,Programming based on a series of steps (subroutines),2.0999999999999996,4
+What is an 'Assembler'?,Translates assembly language into machine code,2.5,1
+What is a 'Syntax Error'?,An error in the grammar of the code,2.5,1
+What is 'Black Box' testing?,Testing based on inputs and outputs without seeing code,2.6,3
+What is 'White Box' testing?,Testing based on the internal logic of the code,2.5,1
+What is 'Alpha' testing?,Internal testing done by the development team,2.5,1
+What is 'Beta' testing?,Testing done by a group of real users before release,2.6,3
+What is 'Low Level Language'?,A language close to machine code (e.g. Assembly),2.5,2
+What is 'High Level Language'?,A language close to human English (e.g. Python),2.5,5
+State the time complexity of a Merge Sort.,O(n log n),2.6,3
